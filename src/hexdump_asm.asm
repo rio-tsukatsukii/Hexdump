@@ -195,7 +195,8 @@ print_hex:
     inc BUFF_OUT_OFF                            ; Move BUFF_OUT_OFF ahead by 1 byte
 
     inc BUFF_OFF                                ; Increment the character offset
-    dec rcx                                     ; Decrement counter
+    ;dec rcx                                     ; Decrement counter
+    sub rcx, 0x1
 
     jnz .loop                                   ; Keep looping till its zero
 
@@ -222,7 +223,8 @@ print_ascii:
     inc BUFF_OUT_OFF                            ; Move BUFF_OUT_OFF ahead by 1 byte
 
     inc CHAR_COUNT                              ; Point to next character
-    dec rcx                                     ; Decrement counter
+    ;dec rcx                                     ; Decrement counter
+    sub rcx, 0x1
     jnz .loop                                   ; Keep looping till its zero
 
 
@@ -285,7 +287,8 @@ print_hex_tail:
     add BUFF_OUT_OFF, 0x2                       ; Move BUFF_OUT_OFF ahead by 2 bytes
 
     inc BUFF_OFF                                ; Increment BUFF_OFF
-    dec BYTES_READ                              ; Decrement BYTES_READ
+    ;dec BYTES_READ                              ; Decrement BYTES_READ
+    sub BYTES_READ, 0x1
 
 
 ; Print characters if 16 hex values have been printed
@@ -323,7 +326,8 @@ padding_loop_tail:
     mov DWORD [buff_out + BUFF_OUT_OFF], 0x20202020
     add BUFF_OUT_OFF, 0x3                       ; Move BUFF_OUT_OFF ahead by 3 bytes
 
-    dec rax                                     ; Decrement rax
+    ;dec rax                                     ; Decrement rax
+    sub rax, 0x1
 
     jnz padding_loop_tail                       ; Loop till enough padding has been written
 
