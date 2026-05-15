@@ -238,7 +238,7 @@ print_newline:
 
     sub BYTES_READ, 0x10                        ; Subtract 16 from number of bytes read
 
-    test BYTES_READ, BYTES_READ                 ; Test if all bytes have been processed
+    ;test BYTES_READ, BYTES_READ                 ; Test if all bytes have been processed
     jz flush_buff                               ; Print buff_out if they have been
 
     cmp BYTES_READ, 0x10                        ; Jump to tail process if less than 16
