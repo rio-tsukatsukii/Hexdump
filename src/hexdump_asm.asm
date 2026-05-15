@@ -24,38 +24,38 @@ SECTION .data
     col_nl: db ":",0xA                          ; A colon and new line
     space: db "    "                            ; 4 spaces
     hex_table:                                  ; Lookup table for hex values
-        dw 0x3030, 0x3130, 0x3230, 0x3330, 0x3430, 0x3530, 0x3630, 0x3730,
-        dw 0x3830, 0x3930, 0x4130, 0x4230, 0x4330, 0x4430, 0x4530, 0x4630,
-        dw 0x3031, 0x3131, 0x3231, 0x3331, 0x3431, 0x3531, 0x3631, 0x3731,
-        dw 0x3831, 0x3931, 0x4131, 0x4231, 0x4331, 0x4431, 0x4531, 0x4631,
-        dw 0x3032, 0x3132, 0x3232, 0x3332, 0x3432, 0x3532, 0x3632, 0x3732,
-        dw 0x3832, 0x3932, 0x4132, 0x4232, 0x4332, 0x4432, 0x4532, 0x4632,
-        dw 0x3033, 0x3133, 0x3233, 0x3333, 0x3433, 0x3533, 0x3633, 0x3733,
-        dw 0x3833, 0x3933, 0x4133, 0x4233, 0x4333, 0x4433, 0x4533, 0x4633,
-        dw 0x3034, 0x3134, 0x3234, 0x3334, 0x3434, 0x3534, 0x3634, 0x3734,
-        dw 0x3834, 0x3934, 0x4134, 0x4234, 0x4334, 0x4434, 0x4534, 0x4634,
-        dw 0x3035, 0x3135, 0x3235, 0x3335, 0x3435, 0x3535, 0x3635, 0x3735,
-        dw 0x3835, 0x3935, 0x4135, 0x4235, 0x4335, 0x4435, 0x4535, 0x4635,
-        dw 0x3036, 0x3136, 0x3236, 0x3336, 0x3436, 0x3536, 0x3636, 0x3736,
-        dw 0x3836, 0x3936, 0x4136, 0x4236, 0x4336, 0x4436, 0x4536, 0x4636,
-        dw 0x3037, 0x3137, 0x3237, 0x3337, 0x3437, 0x3537, 0x3637, 0x3737,
-        dw 0x3837, 0x3937, 0x4137, 0x4237, 0x4337, 0x4437, 0x4537, 0x4637,
-        dw 0x3038, 0x3138, 0x3238, 0x3338, 0x3438, 0x3538, 0x3638, 0x3738,
-        dw 0x3838, 0x3938, 0x4138, 0x4238, 0x4338, 0x4438, 0x4538, 0x4638,
-        dw 0x3039, 0x3139, 0x3239, 0x3339, 0x3439, 0x3539, 0x3639, 0x3739,
-        dw 0x3839, 0x3939, 0x4139, 0x4239, 0x4339, 0x4439, 0x4539, 0x4639,
-        dw 0x3041, 0x3141, 0x3241, 0x3341, 0x3441, 0x3541, 0x3641, 0x3741,
-        dw 0x3841, 0x3941, 0x4141, 0x4241, 0x4341, 0x4441, 0x4541, 0x4641,
-        dw 0x3042, 0x3142, 0x3242, 0x3342, 0x3442, 0x3542, 0x3642, 0x3742,
-        dw 0x3842, 0x3942, 0x4142, 0x4242, 0x4342, 0x4442, 0x4542, 0x4642,
-        dw 0x3043, 0x3143, 0x3243, 0x3343, 0x3443, 0x3543, 0x3643, 0x3743,
-        dw 0x3843, 0x3943, 0x4143, 0x4243, 0x4343, 0x4443, 0x4543, 0x4643,
-        dw 0x3044, 0x3144, 0x3244, 0x3344, 0x3444, 0x3544, 0x3644, 0x3744,
-        dw 0x3844, 0x3944, 0x4144, 0x4244, 0x4344, 0x4444, 0x4544, 0x4644,
-        dw 0x3045, 0x3145, 0x3245, 0x3345, 0x3445, 0x3545, 0x3645, 0x3745,
-        dw 0x3845, 0x3945, 0x4145, 0x4245, 0x4345, 0x4445, 0x4545, 0x4645,
-        dw 0x3046, 0x3146, 0x3246, 0x3346, 0x3446, 0x3546, 0x3646, 0x3746,
-        dw 0x3846, 0x3946, 0x4146, 0x4246, 0x4346, 0x4446, 0x4546, 0x4646
+        dd 0x00203030, 0x00203130, 0x00203230, 0x00203330, 0x00203430, 0x00203530, 0x00203630, 0x00203730,
+        dd 0x00203830, 0x00203930, 0x00204130, 0x00204230, 0x00204330, 0x00204430, 0x00204530, 0x00204630,
+        dd 0x00203031, 0x00203131, 0x00203231, 0x00203331, 0x00203431, 0x00203531, 0x00203631, 0x00203731,
+        dd 0x00203831, 0x00203931, 0x00204131, 0x00204231, 0x00204331, 0x00204431, 0x00204531, 0x00204631,
+        dd 0x00203032, 0x00203132, 0x00203232, 0x00203332, 0x00203432, 0x00203532, 0x00203632, 0x00203732,
+        dd 0x00203832, 0x00203932, 0x00204132, 0x00204232, 0x00204332, 0x00204432, 0x00204532, 0x00204632,
+        dd 0x00203033, 0x00203133, 0x00203233, 0x00203333, 0x00203433, 0x00203533, 0x00203633, 0x00203733,
+        dd 0x00203833, 0x00203933, 0x00204133, 0x00204233, 0x00204333, 0x00204433, 0x00204533, 0x00204633,
+        dd 0x00203034, 0x00203134, 0x00203234, 0x00203334, 0x00203434, 0x00203534, 0x00203634, 0x00203734,
+        dd 0x00203834, 0x00203934, 0x00204134, 0x00204234, 0x00204334, 0x00204434, 0x00204534, 0x00204634,
+        dd 0x00203035, 0x00203135, 0x00203235, 0x00203335, 0x00203435, 0x00203535, 0x00203635, 0x00203735,
+        dd 0x00203835, 0x00203935, 0x00204135, 0x00204235, 0x00204335, 0x00204435, 0x00204535, 0x00204635,
+        dd 0x00203036, 0x00203136, 0x00203236, 0x00203336, 0x00203436, 0x00203536, 0x00203636, 0x00203736,
+        dd 0x00203836, 0x00203936, 0x00204136, 0x00204236, 0x00204336, 0x00204436, 0x00204536, 0x00204636,
+        dd 0x00203037, 0x00203137, 0x00203237, 0x00203337, 0x00203437, 0x00203537, 0x00203637, 0x00203737,
+        dd 0x00203837, 0x00203937, 0x00204137, 0x00204237, 0x00204337, 0x00204437, 0x00204537, 0x00204637,
+        dd 0x00203038, 0x00203138, 0x00203238, 0x00203338, 0x00203438, 0x00203538, 0x00203638, 0x00203738,
+        dd 0x00203838, 0x00203938, 0x00204138, 0x00204238, 0x00204338, 0x00204438, 0x00204538, 0x00204638,
+        dd 0x00203039, 0x00203139, 0x00203239, 0x00203339, 0x00203439, 0x00203539, 0x00203639, 0x00203739,
+        dd 0x00203839, 0x00203939, 0x00204139, 0x00204239, 0x00204339, 0x00204439, 0x00204539, 0x00204639,
+        dd 0x00203041, 0x00203141, 0x00203241, 0x00203341, 0x00203441, 0x00203541, 0x00203641, 0x00203741,
+        dd 0x00203841, 0x00203941, 0x00204141, 0x00204241, 0x00204341, 0x00204441, 0x00204541, 0x00204641,
+        dd 0x00203042, 0x00203142, 0x00203242, 0x00203342, 0x00203442, 0x00203542, 0x00203642, 0x00203742,
+        dd 0x00203842, 0x00203942, 0x00204142, 0x00204242, 0x00204342, 0x00204442, 0x00204542, 0x00204642,
+        dd 0x00203043, 0x00203143, 0x00203243, 0x00203343, 0x00203443, 0x00203543, 0x00203643, 0x00203743,
+        dd 0x00203843, 0x00203943, 0x00204143, 0x00204243, 0x00204343, 0x00204443, 0x00204543, 0x00204643,
+        dd 0x00203044, 0x00203144, 0x00203244, 0x00203344, 0x00203444, 0x00203544, 0x00203644, 0x00203744,
+        dd 0x00203844, 0x00203944, 0x00204144, 0x00204244, 0x00204344, 0x00204444, 0x00204544, 0x00204644,
+        dd 0x00203045, 0x00203145, 0x00203245, 0x00203345, 0x00203445, 0x00203545, 0x00203645, 0x00203745,
+        dd 0x00203845, 0x00203945, 0x00204145, 0x00204245, 0x00204345, 0x00204445, 0x00204545, 0x00204645,
+        dd 0x00203046, 0x00203146, 0x00203246, 0x00203346, 0x00203446, 0x00203546, 0x00203646, 0x00203746,
+        dd 0x00203846, 0x00203946, 0x00204146, 0x00204246, 0x00204346, 0x00204446, 0x00204546, 0x00204646
     ascii_table:                                ; Lookup table for ascii
         db 0x2E, 0x2E, 0x2E, 0x2E, 0x2E, 0x2E, 0x2E, 0x2E,
         db 0x2E, 0x2E, 0x2E, 0x2E, 0x2E, 0x2E, 0x2E, 0x2E,
@@ -173,26 +173,32 @@ read_file:
 print_hex:
     mov rcx, 0x10                               ; Use rcx as counter
     ; Maybe not efficient
-    ;mov edx, 0x20202020
+    ;mov rdx, 0x20202020
     ;mov rsi, 0xA
+    ;mov rdx, ' '
+    ;shl rdx, 16
 .loop:
-    movzx rax, BYTE [buff + BUFF_OFF]           ; Zero extend rax and copy current character into rax
+    movzx rdx, BYTE [buff + BUFF_OFF]           ; Zero extend rax and copy current character into rax
     ; Redundant
     ;lea rsi, [hex_table + rax * 2]              ; Lookup its address in hex_table
     ;movzx rax, WORD [rsi]                       ; Zero extend rax and copy it into rax
-    movzx rax, WORD [hex_table + rax * 2]
-    mov WORD [buff_out + BUFF_OUT_OFF], ax      ; Write it to buff_out
-    add BUFF_OUT_OFF, 0x2                       ; Move BUFF_OUT_OFF ahead by 2 bytes
+    ;movzx rax, WORD [hex_table + rax * 2]
+    movzx rax, DWORD [hex_table + rdx * 4]
+    ;or rax, rdx
+    ;mov WORD [buff_out + BUFF_OUT_OFF], ax      ; Write it to buff_out
+    ;add BUFF_OUT_OFF, 0x2                       ; Move BUFF_OUT_OFF ahead by 2 bytes
 
     ;mov rax, HEX_DELIM                          ; Move a ' ' into rax
     ;mov [buff_out + BUFF_OUT_OFF], al           ; Write it to buff_out
+    mov DWORD [buff_out + BUFF_OUT_OFF], eax
+    add BUFF_OUT_OFF, 0x3
 
     ; Seems like using a register to hold trivial values like this one
     ; causes higher stalled frontend cycles, using immediate values
     ; might be better
-    mov BYTE [buff_out + BUFF_OUT_OFF], HEX_DELIM
+    ;mov BYTE [buff_out + BUFF_OUT_OFF], HEX_DELIM
     ;mov BYTE [buff_out + BUFF_OUT_OFF], dl
-    inc BUFF_OUT_OFF                            ; Move BUFF_OUT_OFF ahead by 1 byte
+    ;inc BUFF_OUT_OFF                            ; Move BUFF_OUT_OFF ahead by 1 byte
 
     inc BUFF_OFF                                ; Increment the character offset
     ;dec rcx                                     ; Decrement counter
@@ -214,11 +220,11 @@ print_padding:
 print_ascii:
     mov rcx, 0x10                               ; Use rcx as counter
 .loop:
-    movzx rax, BYTE [buff + CHAR_COUNT]         ; Zero extend rax and copy current character into it
+    movzx rdx, BYTE [buff + CHAR_COUNT]         ; Zero extend rax and copy current character into it
     ; Redundant
     ;lea rax, [ascii_table + rax]                ; Lookup address of current character in ascii_table
     ;mov al, [rax]                               ; Copy it into al
-    movzx rax, BYTE [ascii_table + rax]
+    movzx rax, BYTE [ascii_table + rdx]
     mov BYTE [buff_out + BUFF_OUT_OFF], al      ; Write it to buff_out
     inc BUFF_OUT_OFF                            ; Move BUFF_OUT_OFF ahead by 1 byte
 
@@ -278,12 +284,12 @@ print_hex_tail:
     ;mov ecx, 0x20202020
     ;mov rdx, 0xA
 .loop:
-    movzx rax, BYTE [buff + BUFF_OFF]           ; Zero extend rax and copy current character into rax
+    movzx rdx, BYTE [buff + BUFF_OFF]           ; Zero extend rax and copy current character into rax
     ; Redundant
     ;lea rsi, [hex_table + rax * 2]              ; Lookup its address in hex_table
     ;movzx rax, WORD [rsi]                       ; Copy it into rax
-    movzx rax, WORD [hex_table + rax * 2]
-    mov WORD [buff_out + BUFF_OUT_OFF], ax      ; Write it to buff_out
+    movzx rax, DWORD [hex_table + rdx * 4]
+    mov DWORD [buff_out + BUFF_OUT_OFF], eax    ; Write it to buff_out
     add BUFF_OUT_OFF, 0x2                       ; Move BUFF_OUT_OFF ahead by 2 bytes
 
     inc BUFF_OFF                                ; Increment BUFF_OFF
@@ -297,7 +303,7 @@ print_hex_tail:
 
     ;mov rax, HEX_DELIM                          ; Move ' ' into rax
     ;mov BYTE [buff_out + BUFF_OUT_OFF], cl           ; Write it to buff_out
-    mov BYTE [buff_out + BUFF_OUT_OFF], HEX_DELIM
+    ;mov BYTE [buff_out + BUFF_OUT_OFF], HEX_DELIM
     inc BUFF_OUT_OFF                            ; Move BUFF_OUT_OFF ahead by 1 byte
 
     ;jmp print_hex_tail                          ; Jump back to print_hex
@@ -334,11 +340,11 @@ padding_loop_tail:
 
 ; Print characters
 print_ascii_tail:
-    movzx rax, BYTE [buff + CHAR_COUNT]         ; Zero extend rax and copy current character into it
+    movzx rdx, BYTE [buff + CHAR_COUNT]         ; Zero extend rax and copy current character into it
     ; Redundant
     ;lea rax, [ascii_table + rax]                ; Lookup address of current character in ascii_table
     ;mov al, [rax]                               ; Copy it into al
-    movzx rax, BYTE [ascii_table + rax]
+    movzx rax, BYTE [ascii_table + rdx]
     mov BYTE [buff_out + BUFF_OUT_OFF], al      ; Write it to buff_out
     inc BUFF_OUT_OFF                            ; Move BUFF_OUT_OFF ahead by 1 byte
 
